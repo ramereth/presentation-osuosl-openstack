@@ -34,13 +34,17 @@
 
       Needed a flexible and elastic environment for testing
 
+      Projects are requesting more flexible computing resources
+
       Experience for students and staff
 
   .. revealjs:: The beginning
 
     .. rst-class:: fragment
 
-      August 2013, Havana
+      August 2013
+
+      Havana Release
 
       Packstack
 
@@ -113,7 +117,9 @@
   * `Chef on OpenStack`__
   * `OpenStack Official Chef Project`__
   * `Example Chef Repo for OpenStack`__
-  * Split out into multiple cookbooks (compute, networking, etc)
+  * Split out into multiple cookbooks
+
+    * compute, networking, etc
 
 .. __: https://docs.chef.io/openstack.html
 .. __: https://launchpad.net/openstack-chef
@@ -157,8 +163,13 @@
 
 .. revealjs:: Test Kitchen
 
-  * An integration tool for developing and testing infrastructure code and
-    software on isolated target platforms
+  .. raw:: html
+
+    <blockquote>"An integration tool for developing and testing infrastructure
+    code and software on isolated target platforms"</blockquote>
+
+.. revealjs:: Test Kitchen
+
   * Primarily used with Chef, but can also be used with Puppet, Ansible, etc
   * Uses Vagrant by default, but we use it with OpenStack
   * ServerSpec for integration testing
@@ -246,8 +257,8 @@
 
 .. revealjs:: Current P8 Setup
 
-  * Fedora 20 on compute nodes
-  * CentOS 6 VM for controller node
+  * Fedora 20 (ppc64) on compute nodes
+  * CentOS 6 (x86_64) VM for controller node
   * Icehouse
   * Guest support for ppc64 and pp64le
   * Patched versions of:
@@ -274,6 +285,7 @@
   * Upgrade to latest release (Liberty possibly)
   * Upgrade everything to CentOS 7 (including P8 systems)
   * Switch to Neutron networking
+  * Switch to ppc64le on compute nodes
 
 .. revealjs:: Questions?
 
